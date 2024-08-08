@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your T-Shirt</title>
+</head>
+<body bgcolor="#f0f8ff"> <!-- Light blue background -->
+
+    <h1 align="center">Welcome to TeeFusion</h1>
+    <p align="center"><font size = 4>
+        At TeeFusion, we believe in the power of personalization. Whether you're creating a one-of-a-kind gift or expressing your unique style, our custom T-shirts allow you to bring your vision to life. Explore endless possibilities with our easy-to-use customization options and wear your story with pride.
+    </font></p>
+        
+
+<form action="/submit_order" method="post">
+    
+      <legend align="center">
+        <h2><strong><font color="#0f075a">Customize Your T-Shirt:</font></strong></h2>
+      </legend>
+      <table align="center" cellpadding="5">
+        <tr>
+          <td align="right">
+            <label for="tagline"><b><font color="#000000">Tagline on the Shirt:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="text"
+              id="tagline"
+              name="tagline"
+              placeholder="Enter your tagline"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+            <td align="right">
+              <label for="imageUpload"><b><font color="#000000">Upload Image or Logo:</font></b></label>
+            </td>
+            <td align="left">
+              <input
+                type="file"
+                id="imageUpload"
+                name="imageUpload"
+                accept="image/*"
+              />
+              
+            </td>
+          </tr>
+          
+        <tr>
+          <td align="right">
+            <label for="color"><b><font color="#000000">Color:</font></b></label>
+          </td>
+          <td align="left">
+            <select id="color" name="color" required>
+              <option value="">Select color</option>
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="Yellow">Yellow</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="size"><b><font color="#000000">Size:</font></b></label>
+          </td>
+          <td align="left">
+            <select id="size" name="size" required>
+              <option value="">Select size</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="quantity"><b><font color="#000000">Quantity:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="100"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="deliveryDate"><b><font color="#000000">Delivery Date:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="date"
+              id="deliveryDate"
+              name="deliveryDate"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+    
+    <br />
+    
+      <legend align="center">
+        <h2><strong><font color="#0f075a">Delivery Details:</font></strong></h2>
+      </legend>
+      <table align="center" cellpadding="5">
+        <tr>
+          <td align="right">
+            <label for="name"><b><font color="#000000">Recipient's Name:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="address"><b><font color="#000000">Address:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Delivery address"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="email"><b><font color="#000000">Email:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="phone"><b><font color="#000000">Phone Number:</font></b></label>
+          </td>
+          <td align="left">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </td>
+        </tr>
+        <br>
+
+        <tr>
+            <td align="right">
+              <label for="giftWrap"><b><font color="#000000">Gift Wrapping:</font></b></label>
+            </td>
+            <td align="left">
+              <input
+                type="checkbox"
+                id="giftWrap"
+                name="giftWrap"
+              />
+              <label for="giftWrap">Add gift wrapping</label>
+            </td>
+          </tr>
+          
+      </table>
+    
+    <br />
+    
+      <legend align="center">
+        <h2><strong><font color="#0f075a">Additional Comments:</font></strong></h2>
+      </legend>
+      <table align="center" cellpadding="5">
+        <tr>
+          <td align="right">
+            <label for="comments"><b><font color="#000000">Additional Comments:</font></b></label>
+          </td>
+          <td align="left">
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Any special instructions"
+              rows="4"
+            ></textarea>
+          </td>
+        </tr>
+              </table>
+    
+    <br/>
+    <fieldset>
+        <legend align="center">
+          <h2><strong><font color="#0f075a">Frequently Asked Questions</font></strong></h2>
+        </legend>
+        <table align="center" cellpadding="5">
+          <tr>
+            <td>
+              <details>
+                <summary>What file formats are accepted for image uploads?</summary>
+                <p>Accepted file formats include JPEG, PNG, and GIF.</p>
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <details>
+                <summary>How long does it take to process a custom T-shirt order?</summary>
+                <p>Processing time for custom T-shirt orders is typically 5-7 business days, depending on the complexity of the design and current order volume.</p>
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <details>
+                <summary>Can I cancel or modify my order after submission?</summary>
+                <p>Orders can only be modified or canceled within 24 hours of submission. Please contact our customer service for assistance.</p>
+              </details>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+<br>      
+    <section align="center">
+      <button type="submit">
+        Submit
+      </button>
+      <button type="reset">
+        Reset Form
+      </button>
+    </section>
+  </form>
+
+</body>
+</html>
